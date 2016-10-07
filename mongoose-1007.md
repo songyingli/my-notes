@@ -108,3 +108,14 @@ post.save(function(){
 ```
 save()是异步函数，需要使用回调函数
 就可以把数据保存到数据库之中了。
+
+注：运行后会出现如下信息
+![](https://github.com/songyingli/my-notes/blob/master/image/%E5%9E%83%E5%9C%BE%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA.png?raw=true)
+
+这种垃圾信息的消除，需要添加如下代码：
+```
+mongoose.Promise = global.Promise;
+
+```
+补充：在markdown中输入链接地址的快捷键是l+tab键。
+截屏的快捷键 ctrl+alt+a
